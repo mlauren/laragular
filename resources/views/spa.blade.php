@@ -8,9 +8,9 @@
     <title>Laravel 5 / AngularJS JWT example</title>
 
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/lumen.min.css">
+    <link rel="stylesheet" href="/css/bootstrap.superhero.min.css">
     <link rel="stylesheet" href="/lib/loading-bar.css">
-    <!-- <link rel="stylesheet" href="{{ assetVersioned('/css/app.css') }}"> -->
+    <link rel="stylesheet" href="{{ assetVersioned('/css/app.css') }}">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -18,6 +18,7 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
+
 <body ng-app="app">
     <div class="navbar navbar-inverse navbar-fixed-top" role="navigation" data-ng-controller="HomeController">
         <div class="container">
@@ -53,9 +54,8 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.14/angular-route.min.js"></script>
     <script src="/lib/ngStorage.js"></script>
     <script src="/lib/loading-bar.js"></script>
-
-    <script src="/scripts/app.js"></script>
-    <script src="/scripts/controllers.js"></script>
-    <script src="/scripts/services.js"></script>
+    <script src="{{ assetVersioned('/scripts/app.js') }}"></script>
+    <script src="{{ assetVersioned('/scripts/controllers.js') }}"></script>
+    <script src="{{ assetVersioned('/scripts/services.js') }}"></script>
 </body>
 </html>
