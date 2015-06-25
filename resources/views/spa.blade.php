@@ -8,8 +8,9 @@
     <title>Laravel 5 / AngularJS JWT example</title>
 
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/bootstrap.superhero.min.css">
+    <link rel="stylesheet" href="/css/bootstrap.lumen.css">
     <link rel="stylesheet" href="/lib/loading-bar.css">
+    <link rel="stylesheet" href="{{ assetVersioned('/css/bootstrap.lumen.css') }}">
     <link rel="stylesheet" href="{{ assetVersioned('/css/app.css') }}">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -42,11 +43,6 @@
         </div>
     </div>
     <div class="container" ng-view=""></div>
-    <div class="footer">
-        <div class="container">
-            <p class="muted credit">Example by <a href="http://www.toptal.com/resume/tino-tkalec" title="Tino Tkalec">Tino Tkalec</a></p>
-        </div>
-    </div>
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>

@@ -26,7 +26,7 @@ return array(
     ),
 
     'paths' => array(
-        'api/*' => array(
+        'v1/*' => array(
             'allowedOrigins' => array('*'),
             'allowedHeaders' => array('*'),
             'allowedMethods' => array('*'),
